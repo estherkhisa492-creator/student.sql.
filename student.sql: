@@ -1,0 +1,24 @@
+
+-- Student Database Project
+
+-- Question 1: Create student table
+CREATE TABLE student (
+    id INTEGER PRIMARY KEY,
+    fullName VARCHAR(100),
+    age INTEGER
+);
+
+-- Question 2: Insert at least 3 records
+INSERT INTO student (id, fullName, age)
+VALUES
+(1, 'John Kamau', 18),
+(2, 'Mary Wanjiku', 20),
+(3, 'Peter Otieno', 19);
+
+-- Question 3: Update student's age
+UPDATE student
+SET age = 20
+WHERE id = 2;
+
+-- Display all student records
+SELECT * FROM student;
